@@ -6,11 +6,11 @@ import { Mens, Womens, Shoes } from '../../screens'
 
 const Tab = createBottomTabNavigator();
 
-function Shop() {
+function Shop({route}) {
 
   return (
     <Tab.Navigator
-      initialRouteName="Mens"
+      initialRouteName={route.params.initialRouteName}
       screenOptions={({route}) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;

@@ -1,20 +1,22 @@
+import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { Pressable, SafeAreaView, Text, View, StyleSheet } from "react-native";
 import MyAppHeader from "../../components/MyAppHeader";
 import MyAppText from "../../components/MyAppText";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { useCartContext } from "../../context/CartContext";
 
 function Mens({ navigation }) {
 
+  const { state, dispatch } = useCartContext();
+  const Stack = createNativeStackNavigator();
+
   return (
     <SafeAreaView style={styles.container}>
-      <MyAppHeader color={'#2058a6'}>Mens </MyAppHeader>
-      <Pressable 
-        onPress={() => navigation.navigate("Home")}
-        >
-        <MyAppText 
-          style={styles.link}>Go to Home Page!</MyAppText>
-      </Pressable>
-
+      <MyAppHeader color={'#2058a2'}>Mens </MyAppHeader>
+      <NavigationContainer independent={true}>
+        
+      </NavigationContainer>
     </SafeAreaView>
   );
 }
@@ -39,3 +41,12 @@ const styles = StyleSheet.create({
 });
 
 export default Mens;
+
+
+
+{/* <Pressable 
+        onPress={() => navigation.navigate("Home")}
+        >
+        <MyAppText 
+          style={styles.link}>Home</MyAppText>
+      </Pressable> */}

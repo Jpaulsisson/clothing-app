@@ -1,23 +1,53 @@
 import React from "react";
-import { Pressable, SafeAreaView, Text, View, StyleSheet } from "react-native";
-
+import { Pressable, SafeAreaView, Text, View, StyleSheet, ImageBackground } from "react-native";
+import MyAppHeader from "../../components/MyAppHeader";
+import MyAppText from "../../components/MyAppText";
+import { mockClothing } from "../../MockData";
 
 function Home({ navigation }) {
 
+  const mensBG = require('../../assets/mens.jpg')
+  const womensBG = require('../../assets/womens.jpeg')
+  const shoesBG = require('../../assets/shoes.jpeg')
+
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello</Text>
+      <MyAppHeader color="#c5ffe5">Welcome</MyAppHeader>
       <Pressable 
-        onPress={() => navigation.navigate("Home")}
+      style={styles.link}
+        onPress={() => navigation.navigate("Shop", {initialRouteName: 'Mens'} )}
         >
-        <Text 
-          style={styles.link}>Home Page!</Text>
+        <ImageBackground 
+          source={mensBG}
+          style={styles.bgImg}
+          resizeMode='cover'
+          >
+          <MyAppText>Mens</MyAppText>
+        </ImageBackground>
       </Pressable>
       <Pressable 
-        onPress={() => navigation.navigate("Shop")}
+        style={styles.link}
+        onPress={() => navigation.navigate("Shop", {initialRouteName: 'Womens'} )}
         >
-        <Text 
-          style={styles.link}>Go to Shopping Page!</Text>
+        <ImageBackground
+          source={womensBG}
+          style={styles.bgImg}
+          resizeMode='cover'
+        >
+          <MyAppText color="#111">Womens</MyAppText>
+        </ImageBackground>
+      </Pressable>
+      <Pressable 
+        style={styles.link}
+        onPress={() => navigation.navigate("Shop", {initialRouteName: 'Shoes'} )}
+        >
+          <ImageBackground
+          source={shoesBG}
+          style={styles.bgImg}
+          resizeMode='cover'
+        >
+          <MyAppText color="#111">Shoes</MyAppText>
+        </ImageBackground>
       </Pressable>
     </SafeAreaView>
   );
@@ -27,12 +57,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#111',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'space-evenly',
+    gap: 8,
+  },
+  bgImg: {
+    flex: 1,
   },
   link: {
-    borderWidth: 2,
-    borderColor: '#036f46',
+    flex: 1,
+    padding: 0,
+    width: '100%',
+    borderWidth: 1,
+    borderRadius: 2,
+    borderColor: 'antiquewhite',
     fontSize: 20,
     color: '#ddd'
   }

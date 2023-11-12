@@ -3,7 +3,7 @@ export const mockClothing = {
     {
       id: 1,
       name: 'basic t-shirt',
-      url: 'https://unsplash.com/photos/man-wearing-antiquewhite-crew-neck-t-shirts-WWesmHEgXDs',
+      url: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['antiquewhite', 'black'],
       price: 15.99
@@ -11,7 +11,7 @@ export const mockClothing = {
     {
       id: 2,
       name: 't-shirt w/pocket',
-      url: 'https://unsplash.com/photos/a-green-t-shirt-sitting-on-a-concrete-floor-Psz62UPYx1E',
+      url: 'https://images.unsplash.com/photo-1633966887768-64f9a867bdba?q=80&w=1403&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['teal', 'antiquewhite', 'black'],
       price: 17.99
@@ -19,7 +19,7 @@ export const mockClothing = {
     {
       id: 3,
       name: 't-shirt w/hipster owl',
-      url: 'https://unsplash.com/photos/man-in-black-and-green-crew-neck-t-shirt-o7E4siDrKH8',
+      url: 'https://images.unsplash.com/photo-1590999659195-e64a988eaf4f?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['antiquewhite', 'machiato'],
       price: 79.99
@@ -27,7 +27,7 @@ export const mockClothing = {
     {
       id: 4,
       name: 'spandex suit',
-      url: 'https://unsplash.com/photos/man-in-blue-suit-standing-on-sidewalk-during-daytime--eb0moHDPBI',
+      url: 'https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['xs', 's'],
       colors: ['navy', 'black', 'pink'],
       price: 159.99
@@ -35,7 +35,7 @@ export const mockClothing = {
     {
       id: 5,
       name: 'weeb jacket',
-      url: 'https://unsplash.com/photos/man-wearing-black-red-and-antiquewhite-floral-long-sleeved-shirt-HiqgOQaksAQ',
+      url: 'https://images.unsplash.com/photo-1532660621034-fb55e2e59762?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl'],
       colors: ['black', 'naruto-orange'],
       price: 659.99
@@ -43,7 +43,7 @@ export const mockClothing = {
     {
       id: 6,
       name: 'Not a members only jacket',
-      url: 'https://unsplash.com/photos/brown-long-sleeve-shirt-on-antiquewhite-clothes-hanger-Fg15LdqpWrs',
+      url: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['salmon-ish', 'green pea'],
       price: 659.99
@@ -53,7 +53,7 @@ export const mockClothing = {
     {
       id: 1,
       name: 'tassel shacket',
-      url: 'https://unsplash.com/photos/woman-standing-near-tree-m4BFg71sNp4',
+      url: 'https://images.unsplash.com/photo-1559694204-61edb596dab1?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['dark teal', 'black'],
       price: 65.99
@@ -61,7 +61,7 @@ export const mockClothing = {
     {
       id: 2,
       name: 'THE sundress',
-      url: 'https://unsplash.com/photos/woman-in-antiquewhite-spaghetti-strap-dress-standing-on-brown-sand-during-daytime-IwJ6DjOPSF8',
+      url: 'https://images.unsplash.com/photo-1586024709284-7481a940c507?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['antiquewhite'],
       price: 69.99
@@ -69,7 +69,7 @@ export const mockClothing = {
     {
       id: 3,
       name: 'color splash chevron skrrrrt',
-      url: 'https://unsplash.com/photos/woman-wearing-antiquewhite-shirt-and-yellow-blue-and-green-striped-long-skirt-D3z2GA4A-Lg',
+      url: 'https://images.unsplash.com/photo-1534445538923-ab38438550d2?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['multi'],
       price: 79.99
@@ -77,7 +77,7 @@ export const mockClothing = {
     {
       id: 4,
       name: 'bolo blouse',
-      url: 'https://unsplash.com/photos/woman-in-antiquewhite-blazer-and-black-skirt-tOPAaNFUB70',
+      url: 'https://images.unsplash.com/photo-1590588503756-08a4b2be5eb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['antiquewhite', 'black', 'mint'],
       price: 49.99
@@ -85,7 +85,7 @@ export const mockClothing = {
     {
       id: 5,
       name: 'pouch pocket parachute pants',
-      url: 'https://unsplash.com/photos/person-in-pink-pants-and-antiquewhite-shoes-5raPrOhbKQo',
+      url: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl'],
       colors: ['off-pink', 'grey', 'olive'],
       price: 129.99
@@ -93,7 +93,7 @@ export const mockClothing = {
     {
       id: 6,
       name: 'chonky sweater',
-      url: 'https://unsplash.com/photos/a-woman-posing-for-a-picture-y3yWsfN3lA4',
+      url: 'https://images.unsplash.com/photo-1651489349274-a101d0c684c4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['antiquewhite-ish'],
       price: 109.99
@@ -103,7 +103,7 @@ export const mockClothing = {
     {
       id: 1,
       name: 'the velma',
-      url: 'https://unsplash.com/photos/woman-wearing-pair-of-black-leather-chunky-heeled-shoes-b2ReGjhq5FQ',
+      url: 'https://images.unsplash.com/photo-1544155815-87a399a4712b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
       colors: ['black'],
       price: 25.99
@@ -111,7 +111,7 @@ export const mockClothing = {
     {
       id: 2,
       name: 'nike Easter Pastels',
-      url: 'https://unsplash.com/photos/a-pair-of-sneakers-sitting-on-top-of-a-antiquewhite-sheet-of-paper-_0n2OqRTzKA',
+      url: 'https://images.unsplash.com/photo-1584735174914-6b1272458e3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
       colors: ['pastel'],
       price: 769.99
@@ -119,7 +119,7 @@ export const mockClothing = {
     {
       id: 3,
       name: 'broken-in boots',
-      url: 'https://unsplash.com/photos/pair-of-brown-leather-boots-in-pavement-x7gz40Z9ObM',
+      url: 'https://images.unsplash.com/photo-1511283402428-355853756676?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [7, 8, 9, 10, 11, 12],
       colors: ['busted up brown'],
       price: 2279.99
@@ -127,7 +127,7 @@ export const mockClothing = {
     {
       id: 4,
       name: 'hand-drawn happy chucks',
-      url: 'https://unsplash.com/photos/person-wearing-black-and-antiquewhite-converse-all-star-high-top-sneakers-mIAgnOkreis',
+      url: 'https://images.unsplash.com/photo-1601888616030-e9b5e7e79c61?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
       colors: ['antiquewhite', 'black', 'royal'],
       price: 149.99
@@ -135,7 +135,7 @@ export const mockClothing = {
     {
       id: 5,
       name: 'plain. simple. boot.',
-      url: 'https://unsplash.com/photos/man-sitting-on-concrete-stair-ryVaXaOJO2Q',
+      url: 'https://images.unsplash.com/photo-1464917675507-01656d5a2257?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
       colors: ['brown', 'black'],
       price: 229.99
@@ -143,7 +143,7 @@ export const mockClothing = {
     {
       id: 6,
       name: 'glow up from the toes up',
-      url: 'https://unsplash.com/photos/womens-antiquewhite-and-silver-peep-toe-pumps-ndpX28miBtE',
+      url: 'https://images.unsplash.com/photo-1581101767113-1677fc2beaa8?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9],
       colors: ['rose-to-antiquewhite'],
       price: 10999.99
