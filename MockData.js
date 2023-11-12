@@ -3,9 +3,9 @@ export const mockClothing = {
     {
       id: 1,
       name: 'basic t-shirt',
-      url: 'https://unsplash.com/photos/man-wearing-white-crew-neck-t-shirts-WWesmHEgXDs',
+      url: 'https://unsplash.com/photos/man-wearing-antiquewhite-crew-neck-t-shirts-WWesmHEgXDs',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['white', 'black'],
+      colors: ['antiquewhite', 'black'],
       price: 15.99
     },
     {
@@ -13,7 +13,7 @@ export const mockClothing = {
       name: 't-shirt w/pocket',
       url: 'https://unsplash.com/photos/a-green-t-shirt-sitting-on-a-concrete-floor-Psz62UPYx1E',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['teal', 'white', 'black'],
+      colors: ['teal', 'antiquewhite', 'black'],
       price: 17.99
     },
     {
@@ -21,7 +21,7 @@ export const mockClothing = {
       name: 't-shirt w/hipster owl',
       url: 'https://unsplash.com/photos/man-in-black-and-green-crew-neck-t-shirt-o7E4siDrKH8',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['white', 'machiato'],
+      colors: ['antiquewhite', 'machiato'],
       price: 79.99
     },
     {
@@ -35,7 +35,7 @@ export const mockClothing = {
     {
       id: 5,
       name: 'weeb jacket',
-      url: 'https://unsplash.com/photos/man-wearing-black-red-and-white-floral-long-sleeved-shirt-HiqgOQaksAQ',
+      url: 'https://unsplash.com/photos/man-wearing-black-red-and-antiquewhite-floral-long-sleeved-shirt-HiqgOQaksAQ',
       sizes: ['s', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl'],
       colors: ['black', 'naruto-orange'],
       price: 659.99
@@ -43,7 +43,7 @@ export const mockClothing = {
     {
       id: 6,
       name: 'Not a members only jacket',
-      url: 'https://unsplash.com/photos/brown-long-sleeve-shirt-on-white-clothes-hanger-Fg15LdqpWrs',
+      url: 'https://unsplash.com/photos/brown-long-sleeve-shirt-on-antiquewhite-clothes-hanger-Fg15LdqpWrs',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['salmon-ish', 'green pea'],
       price: 659.99
@@ -61,15 +61,15 @@ export const mockClothing = {
     {
       id: 2,
       name: 'THE sundress',
-      url: 'https://unsplash.com/photos/woman-in-white-spaghetti-strap-dress-standing-on-brown-sand-during-daytime-IwJ6DjOPSF8',
+      url: 'https://unsplash.com/photos/woman-in-antiquewhite-spaghetti-strap-dress-standing-on-brown-sand-during-daytime-IwJ6DjOPSF8',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['white'],
+      colors: ['antiquewhite'],
       price: 69.99
     },
     {
       id: 3,
       name: 'color splash chevron skrrrrt',
-      url: 'https://unsplash.com/photos/woman-wearing-white-shirt-and-yellow-blue-and-green-striped-long-skirt-D3z2GA4A-Lg',
+      url: 'https://unsplash.com/photos/woman-wearing-antiquewhite-shirt-and-yellow-blue-and-green-striped-long-skirt-D3z2GA4A-Lg',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: ['multi'],
       price: 79.99
@@ -77,15 +77,15 @@ export const mockClothing = {
     {
       id: 4,
       name: 'bolo blouse',
-      url: 'https://unsplash.com/photos/woman-in-white-blazer-and-black-skirt-tOPAaNFUB70',
+      url: 'https://unsplash.com/photos/woman-in-antiquewhite-blazer-and-black-skirt-tOPAaNFUB70',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['white', 'black', 'mint'],
+      colors: ['antiquewhite', 'black', 'mint'],
       price: 49.99
     },
     {
       id: 5,
       name: 'pouch pocket parachute pants',
-      url: 'https://unsplash.com/photos/person-in-pink-pants-and-white-shoes-5raPrOhbKQo',
+      url: 'https://unsplash.com/photos/person-in-pink-pants-and-antiquewhite-shoes-5raPrOhbKQo',
       sizes: ['s', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl'],
       colors: ['off-pink', 'grey', 'olive'],
       price: 129.99
@@ -95,7 +95,7 @@ export const mockClothing = {
       name: 'chonky sweater',
       url: 'https://unsplash.com/photos/a-woman-posing-for-a-picture-y3yWsfN3lA4',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['white-ish'],
+      colors: ['antiquewhite-ish'],
       price: 109.99
     },
   ],
@@ -111,7 +111,7 @@ export const mockClothing = {
     {
       id: 2,
       name: 'nike Easter Pastels',
-      url: 'https://unsplash.com/photos/a-pair-of-sneakers-sitting-on-top-of-a-white-sheet-of-paper-_0n2OqRTzKA',
+      url: 'https://unsplash.com/photos/a-pair-of-sneakers-sitting-on-top-of-a-antiquewhite-sheet-of-paper-_0n2OqRTzKA',
       sizes: [6, 7, 8, 9, 10, 11, 12],
       colors: ['pastel'],
       price: 769.99
@@ -127,9 +127,9 @@ export const mockClothing = {
     {
       id: 4,
       name: 'hand-drawn happy chucks',
-      url: 'https://unsplash.com/photos/person-wearing-black-and-white-converse-all-star-high-top-sneakers-mIAgnOkreis',
+      url: 'https://unsplash.com/photos/person-wearing-black-and-antiquewhite-converse-all-star-high-top-sneakers-mIAgnOkreis',
       sizes: [6, 7, 8, 9, 10, 11, 12],
-      colors: ['white', 'black', 'royal'],
+      colors: ['antiquewhite', 'black', 'royal'],
       price: 149.99
     },
     {
@@ -143,9 +143,9 @@ export const mockClothing = {
     {
       id: 6,
       name: 'glow up from the toes up',
-      url: 'https://unsplash.com/photos/womens-white-and-silver-peep-toe-pumps-ndpX28miBtE',
+      url: 'https://unsplash.com/photos/womens-antiquewhite-and-silver-peep-toe-pumps-ndpX28miBtE',
       sizes: [6, 7, 8, 9],
-      colors: ['rose-to-white'],
+      colors: ['rose-to-antiquewhite'],
       price: 10999.99
     },
   ]

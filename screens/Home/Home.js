@@ -26,7 +26,7 @@ function Home({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#222',
+    backgroundColor: '#111',
     alignItems: 'center',
     justifyContent: 'center',
   },

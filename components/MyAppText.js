@@ -11,6 +11,8 @@ export default function MyAppText({ children }) {
 
 const styles = StyleSheet.create({
   defaultTextStyles: {
-    fontFamily: 'Dosis'
+    color: 'antiquewhite',
+    fontWeight: '200',
+    fontSize: 24,
   }
 })

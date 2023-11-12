@@ -1,19 +1,14 @@
 import React from "react";
 import { Pressable, SafeAreaView, Text, View, StyleSheet } from "react-native";
+import MyAppHeader from "../../components/MyAppHeader";
+import MyAppText from "../../components/MyAppText";
 
 
 function Womens({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Womens page!</Text>
-      <Pressable 
-        onPress={() => navigation.navigate("Home")}
-        >
-        <Text 
-          style={styles.link}>Go to Home Page!</Text>
-      </Pressable>
-
+      <MyAppHeader color={'#aa6468'}>Womens</MyAppHeader>
     </SafeAreaView>
   );
 }
@@ -21,12 +16,12 @@ function Womens({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#222',
+    backgroundColor: '#111',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    color: 'white',
+    color: 'antiquewhite',
   },
   link: {
     borderWidth: 2,
