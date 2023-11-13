@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
   },
   bgImg: {
     flex: 1,
+    opacity: .8,
   },
   link: {
     flex: 1,
