@@ -17,15 +17,11 @@ function Mens({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <MyAppHeader color={'#2058a2'}>Mens </MyAppHeader>
-      <NavigationContainer independent={true}>
-
-        
-      </NavigationContainer>
+      <MyAppHeader color={'#2058a2'}>Mens</MyAppHeader>
       <ScrollView vertical>
         {DATA.map((item) => {
           return (
-            <Pressable onPress={() => navigation.navigate(`${item.name}`)}>
+            <Pressable key={item.id} onPress={() => navigation.navigate('Product', { item: item, id: item.id })}>
               <Image source={{ uri: item.url }} style={{height: 200, width: 300}} />
             </Pressable>
           )

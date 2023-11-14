@@ -6,14 +6,16 @@ import { useCartContext } from "../../context/CartContext";
 import MyAppHeader from "../../components/MyAppHeader";
 
 
-export default function Product(item) {
+export default function Product({ route }) {
+
+  const { item } = route.params;
 
   const navigation = useNavigation();
   const { state, dispatch } = useCartContext();
 
   return (
     <View>
-      <MyAppHeader>{item.name}</MyAppHeader>
+      <MyAppHeader>Hello! The item ID is: {item.price}</MyAppHeader>
     </View>
   )
 }
