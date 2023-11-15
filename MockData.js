@@ -5,7 +5,7 @@ export const mockClothing = {
       name: 'basic t-shirt',
       url: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['antiquewhite', 'black'],
+      colors: [{ name: 'white', hex: '#fff'}, { name: 'black', hex: '#000'}],
       price: 15.99
     },
     {
@@ -13,7 +13,7 @@ export const mockClothing = {
       name: 't-shirt w/pocket',
       url: 'https://images.unsplash.com/photo-1633966887768-64f9a867bdba?q=80&w=1403&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['teal', 'antiquewhite', 'black'],
+      colors: [{ name: 'teal', hex: '#006981'}, { name: 'off-white', hex: '#eee'}, { name: 'black', hex: '#000'}],
       price: 17.99
     },
     {
@@ -21,7 +21,7 @@ export const mockClothing = {
       name: 't-shirt w/hipster owl',
       url: 'https://images.unsplash.com/photo-1590999659195-e64a988eaf4f?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['antiquewhite', 'machiato'],
+      colors: [{ name: 'white-ish', hex: '#eee'}, { name: 'machiato', hex: '#5b2d12'}, { name: 'black', hex: '#000'}],
       price: 79.99
     },
     {
@@ -29,15 +29,15 @@ export const mockClothing = {
       name: 'spandex suit',
       url: 'https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['xs', 's'],
-      colors: ['navy', 'black', 'pink'],
+      colors: [{ name: 'navy', hex: '#000f39'},{ name: 'black', hex: '#000'}, { name: 'pink', hex: '#fea6ff'}],
       price: 159.99
     },
     {
       id: 5,
       name: 'weeb jacket',
       url: 'https://images.unsplash.com/photo-1532660621034-fb55e2e59762?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      sizes: ['s', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl'],
-      colors: ['black', 'naruto-orange'],
+      sizes: ['s', 'm', 'l', 'xl', '2xl', '3xl', '4xl', '5xl'],
+      colors: [{ name: 'black', hex: '#000'}, { name: 'naruto-orange', hex: '#ff8e00'}],
       price: 659.99
     },
     {
@@ -45,7 +45,7 @@ export const mockClothing = {
       name: 'Not a members only jacket',
       url: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['salmon-ish', 'green pea'],
+      colors: [{ name: 'salmon-ish', hex: '#c2795d'}, { name: 'green pea', hex: '#254d19'}],
       price: 659.99
     },
   ],
@@ -86,7 +86,7 @@ export const mockClothing = {
       id: 5,
       name: 'pouch pocket parachute pants',
       url: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      sizes: ['s', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl'],
+      sizes: ['s', 'm', 'l', 'xl', '2xl', '3xl', '4xl', '5xl'],
       colors: ['off-pink', 'grey', 'olive'],
       price: 129.99
     },

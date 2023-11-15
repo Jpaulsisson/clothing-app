@@ -2,7 +2,6 @@ import React from "react";
 import { Pressable, SafeAreaView, Text, View, StyleSheet, ImageBackground } from "react-native";
 import MyAppHeader from "../../components/MyAppHeader";
 import MyAppText from "../../components/MyAppText";
-import { mockClothing } from "../../MockData";
 
 function Home({ navigation }) {
 

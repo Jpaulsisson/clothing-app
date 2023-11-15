@@ -1,4 +1,3 @@
-import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { Pressable, SafeAreaView, Text, View, StyleSheet, Image, ScrollView } from "react-native";
 import MyAppHeader from "../../components/MyAppHeader";
@@ -6,7 +5,6 @@ import MyAppText from "../../components/MyAppText";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useCartContext } from "../../context/CartContext";
 import { mockClothing } from "../../MockData";
-import Product from "../Product/Product";
 
 function Mens({ navigation }) {
 
