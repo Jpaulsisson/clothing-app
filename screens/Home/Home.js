@@ -12,7 +12,7 @@ function Home({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <MyAppHeader color="#c5ffe5">Welcome</MyAppHeader>
+      <MyAppHeader>Welcome</MyAppHeader>
       <Pressable 
       style={styles.link}
         onPress={() => navigation.navigate("Shop", {initialRouteName: 'Mens'} )}
@@ -22,7 +22,7 @@ function Home({ navigation }) {
           style={styles.bgImg}
           resizeMode='cover'
           >
-          <MyAppText>Mens</MyAppText>
+          <MyAppText style={styles.mensLabel}>Mens</MyAppText>
         </ImageBackground>
       </Pressable>
       <Pressable 
@@ -34,7 +34,7 @@ function Home({ navigation }) {
           style={styles.bgImg}
           resizeMode='cover'
         >
-          <MyAppText color="#111">Womens</MyAppText>
+          <MyAppText style={styles.womensLabel}>Womens</MyAppText>
         </ImageBackground>
       </Pressable>
       <Pressable 
@@ -46,7 +46,7 @@ function Home({ navigation }) {
           style={styles.bgImg}
           resizeMode='cover'
         >
-          <MyAppText color="#111">Shoes</MyAppText>
+          <MyAppText style={styles.shoesLabel}>Shoes</MyAppText>
         </ImageBackground>
       </Pressable>
     </SafeAreaView>
@@ -65,6 +65,21 @@ const styles = StyleSheet.create({
     flex: 1,
     opacity: .8,
   },
+  mensLabel: {
+    color: '#eee',
+    fontSize: 30,
+    padding: 4,
+  }, 
+  womensLabel: {
+    color: '#111',
+    fontSize: 30,
+    padding: 4,
+  }, 
+  shoesLabel: {
+    color: '#111',
+    fontSize: 30,
+    padding: 4,
+  }, 
   link: {
     flex: 1,
     padding: 0,

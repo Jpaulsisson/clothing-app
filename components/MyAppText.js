@@ -1,16 +1,30 @@
-import React from 'react'
-import { Text, StyleSheet } from 'react-native'
+import React, { useEffect, useState } from 'react';
+import { Text } from 'react-native';
+import * as Font from 'expo-font';
 
-export default function MyAppText({ color = 'antiquewhite', size = 28, children }) {
+export default function MyAppText(props) {
+
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  useEffect(() => {
+    async function loadFont() {
+      await Font.loadAsync({
+        'Thasadith': require('../assets/fonts/Thasadith-Regular.ttf')
+      });
+      setFontLoaded(true);
+    }
+
+    loadFont();
+  }, [])
+
+  if(!fontLoaded) {
+    return <Text>Loading...</Text>
+  }
+
   return (
-    <Text style={[styles.defaultTextStyles, { color: color, fontSize: size }]}>
-      <Text>{children}</Text>
+    <Text style={{...props.style, fontFamily: 'Thasadith' }}>
+      <Text>{props.children}</Text>
     </Text>
   )
 };
 
-const styles = StyleSheet.create({
-  defaultTextStyles: {
-    fontWeight: '300',
-  }
-})

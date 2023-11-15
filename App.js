@@ -29,7 +29,7 @@ const screenHeaderOptions = {
 export default function App() {
   return (
     <CartProvider>
-      <NavigationContainer linking={linking} fallback={<MyAppText color={'#c0ffee'}>Loading...</MyAppText>}>
+      <NavigationContainer linking={linking} fallback={<MyAppText>Loading...</MyAppText>}>
         <Stack.Navigator>
           <Stack.Screen name='Home' component={Home} options={screenHeaderOptions} />
           <Stack.Screen name='Shop' component={Shop} options={screenHeaderOptions} />

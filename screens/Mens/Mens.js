@@ -10,16 +10,16 @@ import Product from "../Product/Product";
 
 function Mens({ navigation }) {
 
-  const DATA = mockClothing.mens;
+  const MOCK_DATA = mockClothing.mens;
 
   const { state, dispatch } = useCartContext();
   const Stack = createNativeStackNavigator();
 
   return (
     <SafeAreaView style={styles.container}>
-      <MyAppHeader color={'#2058a2'}>Mens</MyAppHeader>
+      <MyAppHeader style={styles.header}>Mens</MyAppHeader>
       <ScrollView vertical>
-        {DATA.map((item) => {
+        {MOCK_DATA.map((item) => {
           return (
             <Pressable key={item.id} onPress={() => navigation.navigate('Product', { item: item, id: item.id })}>
               <Image source={{ uri: item.url }} style={{height: 200, width: 300}} />
@@ -38,9 +38,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title: {
-    color: 'antiquewhite',
-    fontFamily: ''
+  header: {
+    color: '#036f46',
+    fontSize: 48,
   },
   link: {
     borderWidth: 2,
