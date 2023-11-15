@@ -26,19 +26,19 @@ export function Cart() {
         <ScrollView vertical>
           {items.map((item, index) => {
             return (
-              <View style={styles.cartItem}>
+              <View key={item.name + index} style={styles.cartItem}>
                 <Image source={{ uri: item.url }} style={styles.itemImage} />
                 <MyAppText style={styles.itemName}>{item.name}</MyAppText>
                 <MyAppText style={styles.itemPrice}>@ ${item.price}</MyAppText>
                 <Pressable onPress={() => removeItemFromCart(index)}>
-                  <Icon name='x-square' size={30} color={'crimson'} />
+                  <Icon name='x' size={20} color={'darkred'} />
                 </Pressable>
               </View>
             )
           })}
         </ScrollView>
         <MyAppText style={styles.total}>
-          ${total}
+          ${total.toFixed(2)}
           <MyAppText style={styles.totalSpan}> + tax</MyAppText>
         </MyAppText>
       </View>

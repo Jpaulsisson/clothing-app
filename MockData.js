@@ -46,7 +46,7 @@ export const mockClothing = {
       url: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
       colors: [{ name: 'salmon-ish', hex: '#c2795d'}, { name: 'green pea', hex: '#254d19'}],
-      price: 659.99
+      price: 329.99
     },
   ],
   womens: [
@@ -55,7 +55,7 @@ export const mockClothing = {
       name: 'tassel shacket',
       url: 'https://images.unsplash.com/photo-1559694204-61edb596dab1?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['dark teal', 'black'],
+      colors: [{name: 'dark teal', hex: '#012934'}, { name: 'black', hex: '#000'}],
       price: 65.99
     },
     {
@@ -63,7 +63,7 @@ export const mockClothing = {
       name: 'THE sundress',
       url: 'https://images.unsplash.com/photo-1586024709284-7481a940c507?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['antiquewhite'],
+      colors: [{ name: 'off-white', hex: '#eee'}],
       price: 69.99
     },
     {
@@ -71,7 +71,7 @@ export const mockClothing = {
       name: 'color splash chevron skrrrrt',
       url: 'https://images.unsplash.com/photo-1534445538923-ab38438550d2?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['multi'],
+      colors: [{name: 'multi', hex: '#969fac'}],
       price: 79.99
     },
     {
@@ -79,7 +79,7 @@ export const mockClothing = {
       name: 'bolo blouse',
       url: 'https://images.unsplash.com/photo-1590588503756-08a4b2be5eb9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['antiquewhite', 'black', 'mint'],
+      colors: [{ name: 'off-white', hex: '#eee'}, { name: 'black', hex: '#000'}, { name: 'mint', hex: '#a0ffe2' }],
       price: 49.99
     },
     {
@@ -87,7 +87,7 @@ export const mockClothing = {
       name: 'pouch pocket parachute pants',
       url: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl', '2xl', '3xl', '4xl', '5xl'],
-      colors: ['off-pink', 'grey', 'olive'],
+      colors: [{ name: 'off-pink', hex: '#c89588'}, { name: 'grey', hex: '#413a42'}, { name: 'olive', hex: '#100%'}],
       price: 129.99
     },
     {
@@ -95,7 +95,7 @@ export const mockClothing = {
       name: 'chonky sweater',
       url: 'https://images.unsplash.com/photo-1651489349274-a101d0c684c4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: ['s', 'm', 'l', 'xl'],
-      colors: ['antiquewhite-ish'],
+      colors: [{ name: 'cream', hex: '#f3e3da'}],
       price: 109.99
     },
   ],
@@ -105,7 +105,7 @@ export const mockClothing = {
       name: 'the velma',
       url: 'https://images.unsplash.com/photo-1544155815-87a399a4712b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
-      colors: ['black'],
+      colors: [{ name: 'black', hex: '#000'}],
       price: 25.99
     },
     {
@@ -113,7 +113,7 @@ export const mockClothing = {
       name: 'nike Easter Pastels',
       url: 'https://images.unsplash.com/photo-1584735174914-6b1272458e3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
-      colors: ['pastel'],
+      colors: [{ name: 'pastel', hex: '#429bc2'}],
       price: 769.99
     },
     {
@@ -121,7 +121,7 @@ export const mockClothing = {
       name: 'broken-in boots',
       url: 'https://images.unsplash.com/photo-1511283402428-355853756676?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [7, 8, 9, 10, 11, 12],
-      colors: ['busted up brown'],
+      colors: [{ name: 'busted up brown', hex: '#171013'}],
       price: 2279.99
     },
     {
@@ -129,7 +129,7 @@ export const mockClothing = {
       name: 'hand-drawn happy chucks',
       url: 'https://images.unsplash.com/photo-1601888616030-e9b5e7e79c61?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
-      colors: ['antiquewhite', 'black', 'royal'],
+      colors: [{ name: 'off-white', hex: '#171013'}, { name: 'black', hex: '#000'}, { name: 'royal', hex: '#010c28'}],
       price: 149.99
     },
     {
@@ -137,7 +137,7 @@ export const mockClothing = {
       name: 'plain. simple. boot.',
       url: 'https://images.unsplash.com/photo-1464917675507-01656d5a2257?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
-      colors: ['brown', 'black'],
+      colors: [{ name: 'brown', hex: '#171013'}, { name: 'black', hex: '#000'}],
       price: 229.99
     },
     {
@@ -145,7 +145,7 @@ export const mockClothing = {
       name: 'glow up from the toes up',
       url: 'https://images.unsplash.com/photo-1581101767113-1677fc2beaa8?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9],
-      colors: ['rose-to-antiquewhite'],
+      colors: [{ name: 'rosè', hex: '#874e76'}],
       price: 10999.99
     },
   ]

@@ -1,17 +1,12 @@
 import React from "react";
-import { Pressable, SafeAreaView, Text, View, StyleSheet, Image, ScrollView } from "react-native";
+import { SafeAreaView, StyleSheet, ScrollView } from "react-native";
 import MyAppHeader from "../../components/MyAppHeader";
-import MyAppText from "../../components/MyAppText";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { useCartContext } from "../../context/CartContext";
 import { mockClothing } from "../../MockData";
+import ProductPreview from "../../components/ProductPreview";
 
 function Mens({ navigation }) {
 
   const MOCK_DATA = mockClothing.mens;
-
-  const { state, dispatch } = useCartContext();
-  const Stack = createNativeStackNavigator();
 
   return (
     <SafeAreaView style={styles.container}>
@@ -19,9 +14,7 @@ function Mens({ navigation }) {
       <ScrollView vertical>
         {MOCK_DATA.map((item) => {
           return (
-            <Pressable key={item.id} onPress={() => navigation.navigate('Product', { item: item, id: item.id })}>
-              <Image source={{ uri: item.url }} style={{height: 200, width: 300}} />
-            </Pressable>
+            <ProductPreview key={item.id} item={item} navigation={navigation} />
           )
         })}
       </ScrollView>
@@ -37,7 +30,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   header: {
-    color: '#036f46',
+    color: '#217259',
     fontSize: 48,
   },
   link: {
@@ -49,12 +42,3 @@ const styles = StyleSheet.create({
 });
 
 export default Mens;
-
-
-
-{/* <Pressable 
-        onPress={() => navigation.navigate("Home")}
-        >
-        <MyAppText 
-          style={styles.link}>Home</MyAppText>
-      </Pressable> */}

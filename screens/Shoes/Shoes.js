@@ -1,14 +1,23 @@
 import React from "react";
-import { Pressable, SafeAreaView, Text, View, StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet, ScrollView } from "react-native";
 import MyAppHeader from "../../components/MyAppHeader";
-import MyAppText from "../../components/MyAppText";
-
+import { mockClothing } from "../../MockData";
+import ProductPreview from "../../components/ProductPreview";
 
 function Shoes({ navigation }) {
 
+  const MOCK_DATA = mockClothing.shoes;
+
   return (
     <SafeAreaView style={styles.container}>
-      <MyAppHeader color={"#a58d14"}>Shoes</MyAppHeader>
+      <MyAppHeader style={styles.header}>Shoes</MyAppHeader>
+      <ScrollView vertical>
+        {MOCK_DATA.map((item) => {
+          return (
+            <ProductPreview key={item.id} item={item} navigation={navigation} />
+          )
+        })}
+      </ScrollView>
     </SafeAreaView>
   );
 }
@@ -20,8 +29,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title: {
-    color: 'antiquewhite',
+  header: {
+    color: 'goldenrod',
+    fontSize: 48,
   },
   link: {
     borderWidth: 2,

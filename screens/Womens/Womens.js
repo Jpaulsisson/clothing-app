@@ -1,28 +1,24 @@
 import React from "react";
-import { ScrollView, View, StyleSheet, Image } from "react-native";
+import { SafeAreaView, StyleSheet, ScrollView } from "react-native";
 import MyAppHeader from "../../components/MyAppHeader";
-import MyAppText from "../../components/MyAppText";
 import { mockClothing } from "../../MockData";
-
+import ProductPreview from "../../components/ProductPreview";
 
 function Womens({ navigation }) {
 
-  const clothes = mockClothing.womens;
+  const MOCK_DATA = mockClothing.womens;
 
   return (
-    <View style={styles.container}>
-      <MyAppHeader color={'#aa6468'}>Womens</MyAppHeader>
+    <SafeAreaView style={styles.container}>
+      <MyAppHeader style={styles.header}>Womens</MyAppHeader>
       <ScrollView vertical>
-        {clothes.map((item) => {
+        {MOCK_DATA.map((item) => {
           return (
-            <View style={styles.itemContainer}>
-              <Image key={item.id} source={{ uri: item.url }} style={styles.itemImg} />
-              <MyAppText style={{textAlign: 'start'}} size={14}>{item.name.toUpperCase()}</MyAppText>
-            </View>
+            <ProductPreview key={item.id} item={item} navigation={navigation} />
           )
         })}
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -30,18 +26,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#111',
-  },
-  itemContainer: {
-    flex: 1, 
-    width: '100%', 
-    marginBottom: 15, 
     alignItems: 'center',
-    height: 200
+    justifyContent: 'center',
   },
-  itemImg: {
-    flex: 1,
-    width: '80%',
-    
+  header: {
+    color: '#f7cdcc',
+    fontSize: 48,
+  },
+  link: {
+    borderWidth: 2,
+    borderColor: '#036f46',
+    fontSize: 20,
+    color: '#ddd'
   }
 });
 
