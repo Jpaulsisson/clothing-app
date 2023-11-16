@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     },
     namePreview: {
       color: '#eee',
-      fontSize: 16,
+      fontSize: 28,
     },
     colorsAndPriceContainer: {
       flexDirection: 'row',
