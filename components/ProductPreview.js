@@ -18,12 +18,7 @@ function ProductPreview({ navigation, item }) {
     <Pressable style={styles.container} onPress={() => navigation.navigate('Product', { item: item, id: item.id })}>
       <Image source={{ uri: item.url }} style={{height: 400, width: width - 30}} />
       <View style={styles.detailsPreview}>
-        <View style={styles.nameAndAddContainer}>
           <MyAppText style={styles.namePreview}>{item.name}</MyAppText>
-          <TouchableOpacity onPress={() => addItemToCart(item)} >
-            <Icon name='plus' size={25} color={'#eee'}/>
-          </TouchableOpacity>
-        </View>
         <View style={styles.colorsAndPriceContainer}>
           <View style={styles.colorsContainer}>
             {item.colors.map((color) => {
@@ -51,10 +46,6 @@ const styles = StyleSheet.create({
       flex: 2,
       paddingVertical: 10,
       gap: 10,
-    },
-    nameAndAddContainer: {
-      flexDirection: 'row',
-      justifyContent: 'space-between'
     },
     namePreview: {
       color: '#eee',

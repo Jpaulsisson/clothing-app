@@ -113,7 +113,7 @@ export const mockClothing = {
       name: 'nike Easter Pastels',
       url: 'https://images.unsplash.com/photo-1584735174914-6b1272458e3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       sizes: [6, 7, 8, 9, 10, 11, 12],
-      colors: [{ name: 'pastel', hex: '#429bc2'}],
+      colors: [{ name: 'pastel', hex: '#bec7cc'}],
       price: 769.99
     },
     {
